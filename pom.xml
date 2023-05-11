@@ -14,22 +14,32 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>nexus-snapshot</id>
-            <url>http://localhost:8081/repository/nexus-snapshot/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>nexus-release</id>
-            <url>http://localhost:8081/repository/nexus-release/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+    <!--    <repository>-->
+    <!--        <id>nexus-snapshot</id>-->
+    <!--        <url>http://localhost:8081/repository/nexus-snapshot/</url>-->
+    <!--        <snapshots>-->
+    <!--            <enabled>true</enabled>-->
+    <!--        </snapshots>-->
+    <!--    </repository>-->
+    <!--    <repository>-->
+    <!--        <id>nexus-release</id>-->
+    <!--        <url>http://localhost:8081/repository/nexus-release/</url>-->
+    <!--        <snapshots>-->
+    <!--            <enabled>true</enabled>-->
+    <!--        </snapshots>-->
+    <!--    </repository>-->
+    <!--</repositories>-->
+
+   <dependencies>
+       <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+       <dependency>
+           <groupId>com.h2database</groupId>
+           <artifactId>h2</artifactId>
+           <version>2.1.214</version>
+           <scope>test</scope>
+       </dependency>
+   </dependencies>
 
     <distributionManagement>
         <snapshotRepository>
